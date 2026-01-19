@@ -29,6 +29,12 @@ ln -sf ~/dotfiles/.p10k.zsh ~/.p10k.zsh
 source ~/.zshrc
 ```
 
+## Make Alias
+```bash
+echo 'alias dotfiles-update="cd ~/dotfiles && cp ~/.config/kitty/kitty.conf . && cp ~/.zshrc . && cp ~/.p10k.zsh . && git add . && git commit -m \"Update: \$(date)\" && git push"' >> ~/.zshrc
+```
+Run dotfiles-updates from command anytime updates are needed
+
 ## Dependencies
 
 - Homebrew
